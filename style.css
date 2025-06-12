@@ -1,0 +1,627 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'poppins',sans-serif;
+  text-decoration: none;
+  list-style: none;
+}
+/* ---Navigation bar--- */
+.header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 35px 12%;
+  background: rgba(0, 0, 0, 0.8);
+  backdrop-filter: blur(10px);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+}
+/* ---my name format 24  39--- */
+.logo{
+  font-size: 25px;
+  color: white;
+  font-weight: 600;
+  transition: 0.3 ease;
+}
+
+.logo:hover{
+  color: orangered;
+  text-shadow: 0 0 25px orangered;
+  transform: scale(1.1);
+}
+
+span{
+  color: orangered;
+}
+/* ---move to other page connect link 40 70--- */
+.navbar a {
+  font-size: 18px;
+  color: white;
+  font-weight: 500;
+  margin: 0 20px;
+  border-bottom: 3px solid transparent;
+  transition: 0.3 ease;
+}
+
+.navbar a:hover,
+.navbar a.active{
+  color: orangered;
+  border-bottom: 3px solid orangered;
+}
+.contact{
+  padding: 10px 28px;
+  background-color: white;
+  color: black;
+  border: 2px solid transparent;
+  border-radius: 8px;
+  font-size: 16px;
+  letter-spacing: 1px;
+  font-weight: 600;
+  transition: 0.3s ease;
+}
+.contact:hover{
+  background-color: orangered;
+  box-shadow: 0 0 25px orangered;
+  color: white;
+}
+/* ---Homepage section--- */
+.home{
+  width: 100%;
+  min-height: 100vh;
+  background: rgba(241, 241, 241);
+  display: flex;
+  align-items: center;
+  gap: 7em;
+  padding: 30px 12% 0;
+}
+
+.home-content h3{
+  font-size: 42px;
+}
+.home-content h1{
+  font-size: 62px;
+  line-height: 1.2;
+}
+
+.home-content p{
+  font-size: 18px;
+  margin: 25px 0 30px;
+}
+
+.btn-box{
+  width: 345px;
+  display: flex;
+  gap: 2em;
+}
+
+.btn-1{
+  padding: 15px 28px;
+  background-color: black;
+  color: white;
+  border: 2px solid transparent;
+  border-radius: 8px;
+  font-size: 18px;
+  letter-spacing: 1px;
+  font-weight: 600;
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+
+.btn-1:hover{
+  background-color: white;
+  color: black;
+  border: 2px solid black;
+}
+
+.btn-2{
+  padding: 15px 28px;
+  background-color: orangered;
+  color: white;
+  border: 2px solid black;
+  border-radius: 8px;
+  font-size: 18px;
+  letter-spacing: 1px;
+  font-weight: 600;
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+
+.btn-2:hover{
+  background-color: white;
+  color: orangered;
+}
+
+.img-box img{
+  border-radius: 50%;
+  width: 400px;
+  height: 350px;
+}
+
+::-webkit-scrollbar-thumb{
+  background-color: orangered;
+}
+
+::-webkit-scrollbar-track{
+  background-color: rgba(0, 0, 0, 0.6);
+  width: 50px;
+}
+/* ---Aboutpage Section--- */
+
+.about-content h2{
+  text-align: left;
+  color: white;
+  font-size: 46px;
+}
+
+.about-content h3{
+  font-size: 62px;
+  color: white;
+}
+
+.about-content p{
+  color: white;
+  font-size: 20px;
+  margin: 2em 0 3em;
+}
+.contact-form h2{
+  text-align: center;
+  margin-top: 3em;
+  margin-bottom: 1em;
+  font-size: 36px;
+}
+.contact-form form{
+  max-width: 50em;
+  margin: 1rem auto;
+  text-align: center;
+  margin-bottom: 3em;
+}
+.contact-form form .input-box{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.contact-form form .input-box input,
+.contact-form form textarea{
+  width: 100%;
+  padding: 1.5em;
+  font-size: 18px;
+  color: black;
+  background: rgb(241, 241, 241);
+  border-radius: .8rem;
+  margin: 1rem 0;
+  resize: none;
+}
+
+.footer {
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  padding: 40px 0;
+  background-color: black;
+}
+
+.footer .social{
+  text-align: center;
+  padding-bottom: 25px;
+  color: white;
+}
+
+.footer .social a{
+  font-size: 24px;
+  color: white;
+  border: 2px solid orangered;
+  width: 40px;
+  height: 40px;
+  line-height: 38px;
+  display: inline-block;
+  text-align: center;
+  border-radius: 50%;
+  margin: 0 8px;
+  box-shadow: inset 0 0 10px orangered, 0 0 10px orangered;
+  transition: 0.3s ease;
+}
+
+.footer .social a:hover{
+  transform: scale(1.2)translateY(-10px);
+  color: orangered;
+  border: 2px solid orangered;
+}
+
+.footer ul{
+  margin-top: 0;
+  padding: 0;
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 0;
+  text-align: center;
+}
+
+.footer ul li a{
+  color: white;
+  border-bottom: 3px solid transparent;
+  transition: 0.3 ease;
+}
+
+.footer ul li a:hover{
+  border-bottom: 3px solid orangered;
+}
+
+.footer ul li{
+  display: inline-block;
+  padding: 0 15px;
+}
+
+.footer .copyright{
+  margin-top: 15px;
+  text-align: center;
+  font-size: 12px;
+  color: white;
+}
+
+.projects {
+  padding: 60px 10%;
+  background-color: #f9f9f9;
+}
+
+.projects .heading {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.project-container {
+  display: grid;
+  gap: 2rem;
+}
+
+.project-box {
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.project-box:hover {
+  transform: translateY(-5px);
+}
+
+.project-box h3 {
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.project-box ul {
+  padding-left: 20px;
+}
+
+.resume-page {
+  padding: 80px 12%;
+  background-color: #fff;
+  color: #333;
+  line-height: 1.7;
+}
+
+.resume-page h2 {
+  font-size: 36px;
+  color: orangered;
+  border-bottom: 2px solid orangered;
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+.resume-section {
+  margin-bottom: 50px;
+}
+
+.resume-section h3 {
+  font-size: 28px;
+  margin-bottom: 10px;
+  color: #111;
+}
+
+.resume-section h4 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #333;
+}
+
+.resume-section p,
+.resume-section li {
+  font-size: 18px;
+  margin-bottom: 6px;
+}
+
+.resume-section ul {
+  padding-left: 20px;
+}
+
+.resume-contact {
+  background: #f5f5f5;
+  padding: 20px;
+  border-left: 4px solid orangered;
+  margin-top: 30px;
+}
+
+.resume-contact p {
+  margin: 8px 0;
+  font-size: 16px;
+}
+
+.resume-contact a {
+  color: orangered;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.resume-contact a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .resume-page {
+    padding: 40px 5%;
+  }
+  .resume-section h2 {
+    font-size: 28px;
+  }
+  .resume-section h3 {
+    font-size: 24px;
+  }
+}
+
+/* About Me Page Styling */
+.about-page {
+  padding: 80px 12%;
+  background-color: #fff;
+  color: #333;
+  line-height: 1.7;
+}
+
+.about-page .heading {
+  font-size: 36px;
+  color: orangered;
+  margin-bottom: 40px;
+  border-bottom: 2px solid orangered;
+  display: inline-block;
+}
+
+.about-section {
+  margin-bottom: 50px;
+}
+
+.about-section h3 {
+  font-size: 28px;
+  color: #222;
+  margin-bottom: 15px;
+}
+
+.about-section p {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.about-section ul {
+  list-style-type: disc;
+  padding-left: 25px;
+}
+
+.about-section ul li {
+  font-size: 17px;
+  margin-bottom: 6px;
+}
+
+/* Profile Picture (Optional) */
+.about-image {
+  max-width: 200px;
+  border-radius: 50%;
+  margin-bottom: 30px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+}
+
+/* Contact Box (optional highlight section) */
+.about-contact {
+  background-color: #f8f8f8;
+  padding: 20px;
+  border-left: 4px solid orangered;
+  margin-top: 40px;
+}
+
+.about-contact p {
+  margin: 8px 0;
+  font-size: 16px;
+}
+
+.about-contact a {
+  color: orangered;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.about-contact a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .about-page {
+    padding: 40px 6%;
+  }
+  .about-page .heading {
+    font-size: 28px;
+  }
+  .about-section h3 {
+    font-size: 22px;
+  }
+}
+
+/* Contact Page */
+.contact-page {
+  padding: 80px 12%;
+  background: #fff;
+  color: #333;
+}
+
+.contact-page .heading {
+  font-size: 36px;
+  color: orangered;
+  margin-bottom: 40px;
+}
+
+.contact-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+}
+
+.contact-form {
+  flex: 1;
+  min-width: 280px;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 15px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+.contact-form .btn-2 {
+  padding: 12px;
+  background-color: orangered;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.contact-form .btn-2:hover {
+  background-color: #d84315;
+}
+
+.contact-info {
+  flex: 1;
+  font-size: 18px;
+}
+
+.contact-info a {
+  color: orangered;
+  text-decoration: none;
+}
+
+.contact-info a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .contact-container {
+    flex-direction: column;
+  }
+}
+
+.experience-section {
+  padding: 80px 12%;
+  background: #fff;
+  color: #333;
+}
+
+.experience-section .heading {
+  font-size: 36px;
+  color: orangered;
+  margin-bottom: 40px;
+}
+
+.timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.exp-item {
+  background: #f9f9f9;
+  padding: 25px;
+  border-left: 5px solid orangered;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+}
+
+.exp-item h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.exp-item .duration {
+  font-weight: bold;
+  color: #555;
+  margin-bottom: 10px;
+  display: block;
+}
+
+.exp-item p {
+  line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+  .experience-section {
+    padding: 40px 8%;
+  }
+
+  .exp-item {
+    padding: 20px;
+  }
+}
+
+.buttons {
+  display: flex;
+  gap: 15px;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+
+.btn {
+  padding: 12px 24px;
+  background-color: orangered;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background 0.3s;
+}
+
+.btn:hover {
+  background-color: #cc3300;
+}
+
+
+
+/* Applies padding so content doesn’t hide behind the fixed navbar */
+body {
+    padding-top: 80px; /* Adjust to your navbar height */
+}
+
+/* Force footer to bottom if content is short */
+html, body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+body > main {
+    flex: 1;
+}
+
+footer {
+    margin-top: auto;
+}
